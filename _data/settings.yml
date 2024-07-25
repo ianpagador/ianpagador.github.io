@@ -36,13 +36,12 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Hi! I’m <br> Christoher <br> UX designer
+  hero-title: Welcome to <br> Ian Pagador's <br> website!
 
 social:
-  - { icon: "ti-facebook", link: "#" }
-  - { icon: "ti-instagram", link: "#" }
-  - { icon: "ti-dribbble", link: "#" }
-  - { icon: "ti-twitter", link: "#" }
+  - { icon: "ti-instagram", link: "https://www.instagram.com/ianmirandap/" }
+  - { icon: "ti-github", link: "https://github.com/ianpagador" }
+  - { icon: "ti-linkedin", link: "https://www.linkedin.com/in/ian-venedict-pagador-965600227/" }
 
 #-------------------------------
 # About (Section and Page)
@@ -52,36 +51,6 @@ blurb: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
 
 blurb-btn-link: "/about"
 blurb-btn-name: know more
-
-# About Page
-
-# Work Process Section
-work-process:
-  - title: "Research and Plan"
-    icon: "assets/images/icons/plan.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-  - title: "Design and Develop"
-    icon: "assets/images/icons/design.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-  - title: "Deliver"
-    icon: "assets/images/icons/print.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-# My Team Section
-team:
-  - title: "Jack Schenziwe"
-    image: "assets/images/team/member-1.png"
-    designation: "Project Manager"
-
-  - title: "Julias Carlie"
-    image: "assets/images/team/member-2.png"
-    designation: "Web Developer"
-
-  - title: "John Doe"
-    image: "assets/images/team/member-3.png"
-    designation: "Designer"
 
 #-------------------------------
 # Skills Section
@@ -99,22 +68,16 @@ skills:
 experience-title: Experience
 experience:
   - {
-      name: Junior UX Designer,
-      icon: "icon-1.png",
-      date: "Jan 2007 - Feb 2009",
-      organization: "WEBEX",
+      name: Student Consultant,
+      icon: "open-avenues-banner.png",
+      date: "Sep 2023 - Dec 2023",
+      organization: "Open Avenues Foundation",
     }
   - {
-      name: UX & UI Designer,
-      icon: "icon-2.png",
-      date: "Mar 2009 - Aug 2014",
-      organization: "AUGMEDIX",
-    }
-  - {
-      name: Senior UI Designer,
-      icon: "icon-3.png",
-      date: "Sep 2014 - Present",
-      organization: "THEMEFISHER",
+      name: IT Intern,
+      icon: "pdr-banner.jpg",
+      date: "May 2024 - Present",
+      organization: "San Francisco Public Defender",
     }
 
 #-------------------------------

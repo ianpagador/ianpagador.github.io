@@ -1,18 +1,12 @@
 ---
 layout: about
 title: About Me
-author: Johnathan Smith
+author: Ian Pagador
 image: assets/images/about/author.jpg
-signature: assets/images/about/signature.png
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat.
+I am a current undergraduate student at UC Merced aiming to pursue a career in Data Analytics. I have experience programming with C++ and multiple Python libraries such as PyTorch, Numpy, Pandas, and Matplotlib. I have also configured and trained models within R Studio (Leaps, MASS, pROC) and Microsoft Azure (Machine Learning Studio, Cognitive Services). 
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident.
+I have also demonstrated open-mindedness, attention to detail, and leadership skills as both a section lead and executive board member for two on-campus dance organizations.
 
-Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+I am currently a freelance developer for two projects. The first of my ongoing projects is an AI-powered customer service system in which I program speech recognition tools. In my latest project, I am using React JS to design a parking program for San Francisco employees.

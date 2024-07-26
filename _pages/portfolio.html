@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Portfolio
+title: My Portfolio
 ---
 <!-- portfolio -->
 <section class="section">
@@ -20,7 +20,6 @@ title: Portfolio
       </div>
     </div>
     <div class="row shuffle-wrapper">
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQn9iBcRSWrg_UH8uJxueoiCV8e8ayCLDLJJFju4GJVSiGuMHLR8HZaeF5u5HcINuD2dfi3u5HK64Xl/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
       {% for item in site.data.settings.portfolio-items %}
       <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{% for portfolio in item.portfolio-type %}{% if forloop.first == true %}{% else %},{% endif %}&quot;{{ portfolio.type }}&quot;{% endfor %}]">
         <div class="position-relative rounded hover-wrapper">
@@ -30,6 +29,8 @@ title: Portfolio
               <a class="btn btn-light btn-sm" href="{{ item.url }}">view project</a>
             </div>
           </div>
+          <br><br>
+        <h4 style="text-align:center" >{{ item.text }}</h4>
         </div>
       </div>
       {% endfor %}
@@ -37,16 +38,3 @@ title: Portfolio
   </div>
 </section>
 <!-- /portfolio -->
-
-<!-- clients -->
-<section class="section bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">My Clients</h2>
-      </div>
-    </div>
-    {% include client-slider.html %}
-  </div>
-</section>
-<!-- /clients -->

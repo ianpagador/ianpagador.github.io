@@ -3,17 +3,17 @@
 # General Site Settings
 
 title: Ian Pagador
-logo:
+logo: 
 author:
 description: this is meta description
 email: ian.pagador2@gmail.com
-phone: (510) 509 - 8221
+phone: (510)509-8221
+school: ipagador@ucmerced.edu
 address: 
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
 menu:
   - { name: About, link: "/about" }
-  - { name: Blog, link: "/blog" }
   - { name: Portfolio, link: "/portfolio" }
   - { name: Contact, link: "/contact" }
 
@@ -39,9 +39,9 @@ hero:
   hero-title: Welcome to <br> Ian Pagador's <br> website!
 
 social:
-  - { icon: "ti-instagram", link: "https://www.instagram.com/ianmirandap/" }
-  - { icon: "ti-github", link: "https://github.com/ianpagador" }
-  - { icon: "ti-linkedin", link: "https://www.linkedin.com/in/ian-venedict-pagador-965600227/" }
+  - { name: "Instagram", icon: "ti-instagram", link: "https://www.instagram.com/ianmirandap/" }
+  - { name: "GitHub", icon: "ti-github", link: "https://github.com/ianpagador" }
+  - { name: "LinkedIn", icon: "ti-linkedin", link: "https://www.linkedin.com/in/ian-venedict-pagador-965600227/" }
 
 #-------------------------------
 # About (Section and Page)
@@ -50,17 +50,7 @@ social:
 blurb: I'm a 4th year undergraduate student majoring in CSE and minoring in Cognitive Science at the University of California, Merced, aiming to pursue a career in Data Analytics. Here you can find the projects I completed across my educational and professional experiences.
 
 blurb-btn-link: "/about"
-blurb-btn-name: know more
-
-#-------------------------------
-# Skills Section
-
-skills-title: Skills
-skills:
-  - { name: Web Design, color: "#fdb157", value: "90%" }
-  - { name: Logo Design, color: "#9473e6", value: "60%" }
-  - { name: After Effects, color: "#bdecf6", value: "80%" }
-  - { name: Web App, color: "#ffbcaa", value: "70%" }
+blurb-btn-name: learn more
 
 #-------------------------------
 # Exprerience Section
@@ -75,7 +65,7 @@ experience:
     }
   - {
       name: IT Intern,
-      icon: "pdr-banner.jpg",
+      icon: "pdr-icon (1).jpg",
       date: "May 2024 - Present",
       organization: "San Francisco Public Defender",
     }
@@ -86,181 +76,84 @@ experience:
 education-title: Education
 education:
   - {
-      name: Marters in UX Design,
-      date: "2006",
-      organization: "Masassusets Institute of Technology",
+      name: "University of California, Merced",
+      date: "2021 - 2025 (expected)",
+      organization: "B.S. in Computer Science <br> and Engineering"
     }
   - {
-      name: Honours in Fine Arts,
-      date: "2004",
-      organization: "Harvard University",
-    }
-  - {
-      name: Higher Secondary Certificat,
-      date: "2000",
-      organization: "Cardiff School",
-    }
-  - {
-      name: Secondary School Certificate,
-      date: "1998",
-      organization: "Cardiff School",
+      name: Granada High School,
+      date: "2017 - 2021",
+      organization: "Golden State Seal Merit Diploma"
     }
 
 #-------------------------------
-# Services Section
-
-services-title: Services
-services:
-  - {
-      name: UI Design,
-      icon: ti-palette,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      active: ,# Add true to select section
-    }
-  - {
-      name: UX Design,
-      icon: ti-vector,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      active: true, # Add true to select section
-    }
-  - {
-      name: Interaction Design,
-      icon: ti-panel,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      active: ,# Add true to select section
-    }
-
-#-------------------------------
-# Portfolio (Section and Page)
-
-# Portfolio Home Section
-portfolio-home-items:
-  - image: "assets/images/portfolio/item-1.png"
-    url: "#"
-
-  - image: "assets/images/portfolio/item-2.png"
-    url: "#"
-
-  - image: "assets/images/portfolio/item-3.png"
-    url: "#"
-
-  - image: "assets/images/portfolio/item-4.png"
-    url: "#"
-
-  - image: "assets/images/portfolio/item-5.png"
-    url: "#"
-
 # Portfolio Page
+
 portfolio-label:
-  - { title: "UI/UX Design", type: "design" }
-  - { title: "BRANDING", type: "branding" }
-  - { title: "ILLUSTRATION", type: "illustration" }
+  - { title: "DESIGN", type: "design" }
+  - { title: "SCRIPTING", type: "scripting" }
+  - { title: "MEDIA", type: "media" }
 
 portfolio-items:
-  - image: "assets/images/portfolio/item-1.png"
-    url: "#"
+  - image: "assets/images/portfolio/pdr parade.png"
+    url: "https://github.com/ianpagador/PDRscripts"
+    text: "Public Defender <br> Scripts Collection"
     portfolio-type:
-      - type: "design"
-      - type: "illustration"
+      - type: "scripting"
 
-  - image: "assets/images/portfolio/item-2.png"
-    url: "#"
+  - image: "assets/images/portfolio/practice attendance.png"
+    url: "https://docs.google.com/spreadsheets/d/1KbTC5eV9S_06aDJmsZksG1b2ja5PmkneH8nAWhYiSeQ/edit?usp=sharing"
+    text: "KAIROS Dance Practice <br> Attendance Spreadsheet"
     portfolio-type:
-      - type: "branding"
+      - type: "scripting"
 
-  - image: "assets/images/portfolio/item-3.png"
-    url: "#"
-    portfolio-type:
-      - type: "illustration"
-
-  - image: "assets/images/portfolio/item-6.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-      - type: "branding"
-
-  - image: "assets/images/portfolio/item-8.png"
-    url: "#"
-    portfolio-type:
-      - type: "illustration"
-
-  - image: "assets/images/portfolio/item-5.png"
-    url: "#"
+  - image: "assets/images/portfolio/Soul motion.png"
+    url: "https://www.canva.com/design/DAFoZufMPsI/TwWaJ-aU0mcIS8F1XItMZA/edit?utm_content=DAFoZufMPsI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    text: "Movers in Soul Motion <br> Promotional Poster"
     portfolio-type:
       - type: "design"
 
-  - image: "assets/images/portfolio/item-1.png"
-    url: "#"
+  - image: "assets/images/portfolio/oa project.png"
+    url: "https://acrobat.adobe.com/id/urn:aaid:sc:US:85c2c9e2-0a9d-4771-a842-b66d7d0feac9"
+    text: "OA Project: Predicting Adverse Events Risk with Logistic Regression and Stepwise Selection"
     portfolio-type:
-      - type: "branding"
+      - type: "scripting"
 
-  - image: "assets/images/portfolio/item-3.png"
-    url: "#"
+  - image: "assets/images/portfolio/M4K MIC DROP PROMOTION.png"
+    url: "https://www.canva.com/design/DAF8DKbuk2w/ouufOGxjF8GD4aqhC2Knqg/edit?utm_content=DAF8DKbuk2w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    text: "M4K Mic Drop Unit <br> Promotional Poster"
     portfolio-type:
       - type: "design"
-      - type: "illustration"
-      - type: "branding"
 
-  - image: "assets/images/portfolio/item-7.png"
-    url: "#"
+  - image: "assets/images/portfolio/CASE 143.png"
+    url: "https://www.canva.com/design/DAFYmtUWb78/SNapKcrprxhlXwFW-pE7Og/edit?utm_content=DAFYmtUWb78&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    text: "KAIROS CASE 143 Unit <br> Promotional Poster"
     portfolio-type:
-      - type: "illustration"
+      - type: "design"
 
-#-------------------------------
-# Testimonials Section
+  - image: "assets/images/portfolio/thumbnail_143.jpg"
+    url: "https://youtu.be/_81l0J5-lnc?si=ZYQkOLMd7BangyuG"
+    text: "KAIROS CASE 143 Dance Cover"
+    portfolio-type:
+      - type: "media"
+      - type: "design"
 
-testimonial-items:
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  - image: "assets/images/portfolio/Copy of Bridgie.png"
+    url: "https://github.com/EzraApple/ccbridge"
+    text: "CCBridge - An AI-powered <br> Customer Service System"
+    portfolio-type:
+      - type: "scripting"
+      - type: "design"
 
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  - image: "assets/images/portfolio/ig vlog thumbnail.jpg"
+    url: "https://www.instagram.com/reel/CwED3tZJxMF"
+    text: "Instagram Vlog <br> @Salt & Olive in Utah"
+    portfolio-type:
+      - type: "media"
 
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-
-#-------------------------------
-# Client Slider Section
-
-client-slider-items:
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
 
 #-------------------------------
 # Contact Section
 
 contact-title: Contact Info
-contact-email: steve.fruits@email.com
+contact-email: ian.pagador2@gmail.com

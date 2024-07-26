@@ -21,8 +21,10 @@ title: My Portfolio
     </div>
     <div class="row shuffle-wrapper">
       {% for item in site.data.settings.portfolio-items %}
-      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{% for portfolio in item.portfolio-type %}{% if forloop.first == true %}{% else %},{% endif %}&quot;{{ portfolio.type }}&quot;{% endfor %}]">
+      <div class="col-lg-4 col-6 mb-4 shuffle-item"
+        data-groups="[{% for portfolio in item.portfolio-type %}{% if forloop.first == true %}{% else %},{% endif %}&quot;{{ portfolio.type }}&quot;{% endfor %}]">
         <div class="position-relative rounded hover-wrapper">
+          <span></span>
           <img src="{{ site.baseurl }}/{{ item.image }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
@@ -30,7 +32,17 @@ title: My Portfolio
             </div>
           </div>
           <br><br>
-        <h4 style="text-align:center" >{{ item.text }}</h4>
+          <span></span>
+          <h4 style="text-align:center">{{ item.text }}</h4>
+          <p style="text-align:center;margin-bottom:7px">{{ item.description }}</p>
+          <div style="text-align:center">
+            <ul class="comma-list">
+              <span class="font-secondary">Tags: </span>
+              {% for tag in item.portfolio-type %}
+              <li style="text-align:center">{{ tag.type }}</li>
+              {% endfor %}
+            </ul>
+        </div>
         </div>
       </div>
       {% endfor %}

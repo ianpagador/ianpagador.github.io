@@ -98,42 +98,49 @@ portfolio-items:
   - image: "assets/images/portfolio/pdr parade.png"
     url: "https://github.com/ianpagador/PDRscripts"
     text: "Public Defender <br> Scripts Collection"
-    portfolio-type:
-      - type: "scripting"
-
-  - image: "assets/images/portfolio/practice attendance.png"
-    url: "https://docs.google.com/spreadsheets/d/1KbTC5eV9S_06aDJmsZksG1b2ja5PmkneH8nAWhYiSeQ/edit?usp=sharing"
-    text: "KAIROS Dance Practice <br> Attendance Spreadsheet"
+    description: "A GitHub repo containing my completed scripts as a PDR intern."
     portfolio-type:
       - type: "scripting"
 
   - image: "assets/images/portfolio/Soul motion.png"
     url: "https://www.canva.com/design/DAFoZufMPsI/TwWaJ-aU0mcIS8F1XItMZA/edit?utm_content=DAFoZufMPsI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     text: "Movers in Soul Motion <br> Promotional Poster"
+    description: "A Canva poster I created for the Movers in Soul Motion Club in July 2023."
     portfolio-type:
       - type: "design"
 
   - image: "assets/images/portfolio/oa project.png"
     url: "https://acrobat.adobe.com/id/urn:aaid:sc:US:85c2c9e2-0a9d-4771-a842-b66d7d0feac9"
-    text: "OA Project: Predicting Adverse Events Risk with Logistic Regression and Stepwise Selection"
+    text: "Predicting Adverse Events Risk with Logistic Regression and Stepwise Selection"
+    description: "A project I completed during my internship at Open Avenues Healthcare Data Analytics Institute."
     portfolio-type:
       - type: "scripting"
 
   - image: "assets/images/portfolio/M4K MIC DROP PROMOTION.png"
     url: "https://www.canva.com/design/DAF8DKbuk2w/ouufOGxjF8GD4aqhC2Knqg/edit?utm_content=DAF8DKbuk2w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     text: "M4K Mic Drop Unit <br> Promotional Poster"
+    description: "A Canva poster I contributed in designing for M4K at UC Merced."
     portfolio-type:
       - type: "design"
+
+  - image: "assets/images/portfolio/practice attendance.png"
+    url: "https://docs.google.com/spreadsheets/d/1KbTC5eV9S_06aDJmsZksG1b2ja5PmkneH8nAWhYiSeQ/edit?usp=sharing"
+    text: "KAIROS Dance Practice <br> Attendance Spreadsheet"
+    description: "A dynamic spreadsheet I made as a KAIROS section lead to automatically highlight cells for dance practice attendance."
+    portfolio-type:
+      - type: "scripting"
 
   - image: "assets/images/portfolio/CASE 143.png"
     url: "https://www.canva.com/design/DAFYmtUWb78/SNapKcrprxhlXwFW-pE7Og/edit?utm_content=DAFYmtUWb78&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
     text: "KAIROS CASE 143 Unit <br> Promotional Poster"
+    description: "A Canva poster I constructed to advertise my KAIROS unit's first dance workshop."
     portfolio-type:
       - type: "design"
 
   - image: "assets/images/portfolio/thumbnail_143.jpg"
     url: "https://youtu.be/_81l0J5-lnc?si=ZYQkOLMd7BangyuG"
     text: "KAIROS CASE 143 Dance Cover"
+    description: "A dance cover video I designed and edited entirely as a KAIROS section lead."
     portfolio-type:
       - type: "media"
       - type: "design"
@@ -141,6 +148,7 @@ portfolio-items:
   - image: "assets/images/portfolio/Copy of Bridgie.png"
     url: "https://github.com/EzraApple/ccbridge"
     text: "CCBridge - An AI-powered <br> Customer Service System"
+    description: "My team's submission for UC Berkeley's AI Hackathon. My contributions were implementing speech recognition and designing branding elements."
     portfolio-type:
       - type: "scripting"
       - type: "design"
@@ -148,6 +156,7 @@ portfolio-items:
   - image: "assets/images/portfolio/ig vlog thumbnail.jpg"
     url: "https://www.instagram.com/reel/CwED3tZJxMF"
     text: "Instagram Vlog <br> @Salt & Olive in Utah"
+    description: "One example of the vlogs I post on Instagram showcasing food and travel activities."
     portfolio-type:
       - type: "media"
 
@@ -155,5 +164,4 @@ portfolio-items:
 #-------------------------------
 # Contact Section
 
-contact-title: Contact Info
 contact-email: ian.pagador2@gmail.com

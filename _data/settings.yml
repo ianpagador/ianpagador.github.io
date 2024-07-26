@@ -2,13 +2,13 @@
 #-------------------------------
 # General Site Settings
 
-title: Kross
+title: Ian Pagador
 logo:
-author: themefisher
+author:
 description: this is meta description
-email: steve.fruits@email.com
-phone: +880 2544 658 256
-address: 125/A, CA Commercial Area, California, USA
+email: ian.pagador2@gmail.com
+phone: (510) 509 - 8221
+address: 
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
 menu:
@@ -47,7 +47,7 @@ social:
 # About (Section and Page)
 
 # About Section
-blurb: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+blurb: I'm a 4th year undergraduate student majoring in CSE and minoring in Cognitive Science at the University of California, Merced, aiming to pursue a career in Data Analytics. Here you can find the projects I completed across my educational and professional experiences.
 
 blurb-btn-link: "/about"
 blurb-btn-name: know more
@@ -69,7 +69,7 @@ experience-title: Experience
 experience:
   - {
       name: Student Consultant,
-      icon: "open-avenues-banner.png",
+      icon: "open-avenues (1).png",
       date: "Sep 2023 - Dec 2023",
       organization: "Open Avenues Foundation",
     }

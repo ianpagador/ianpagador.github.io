@@ -2,7 +2,7 @@
 layout: about
 title: About Me
 author: Ian Pagador
-image: assets/images/about/author.jpg
+image: assets/images/about/4B51D7C5-59CA-46B9-B83A-BCC985D94AF4.jpg
 ---
 
 I am a current undergraduate student at UC Merced aiming to pursue a career in Data Analytics. I have experience programming with C++ and multiple Python libraries such as PyTorch, Numpy, Pandas, and Matplotlib. I have also configured and trained models within R Studio (Leaps, MASS, pROC) and Microsoft Azure (Machine Learning Studio, Cognitive Services). 

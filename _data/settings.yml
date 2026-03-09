@@ -40,7 +40,6 @@ hero:
 
 social:
   - { name: "Instagram", icon: "ti-instagram", link: "https://www.instagram.com/ianmirandap/" }
-  - { name: "GitHub", icon: "ti-github", link: "https://github.com/ianpagador" }
   - { name: "LinkedIn", icon: "ti-linkedin", link: "https://www.linkedin.com/in/ian-venedict-pagador-965600227/" }
 
 #-------------------------------

@@ -99,6 +99,24 @@
     });
   }
 
+  // Hero leaf drift (slow randomized movement, no mouse tracking)
+  var heroLayers = document.querySelectorAll(".hero-layer");
+
+  heroLayers.forEach(function (layer) {
+    var driftToRandomPosition = function () {
+      var x = Math.floor(Math.random() * 120 - 60);
+      var y = Math.floor(Math.random() * 90 - 45);
+      var rotate = Math.floor(Math.random() * 8 - 4);
+      var duration = 14 + Math.random() * 10;
+
+      layer.style.transition = "transform " + duration + "s ease-in-out";
+      layer.style.transform = "translate(" + x + "px, " + y + "px) rotate(" + rotate + "deg)";
+    };
+
+    driftToRandomPosition();
+    setInterval(driftToRandomPosition, 16000 + Math.random() * 8000);
+  });
+
   // Technical skills word cloud
   var skillsDataElement = document.getElementById("skills-word-cloud-data");
   var skillsCanvas = document.getElementById("skills-word-cloud");
@@ -114,7 +132,7 @@
     var renderSkillsWordCloud = function () {
       var wrapper = skillsCanvas.parentElement;
       var width = wrapper.offsetWidth;
-      var height = Math.max(460, Math.min(540, width * 0.62));
+      var height = Math.max(380, Math.min(440, width * 0.48));
 
       skillsCanvas.width = width;
       skillsCanvas.height = height;
@@ -137,7 +155,6 @@
         minSize: 10,
         drawOutOfBound: false,
         shrinkToFit: true,
-        origin: [width / 2, height / 2 - 10],
       });
     };
 

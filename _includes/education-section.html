@@ -1,16 +1,20 @@
 {% if site.data.settings.education %}
 <!-- education -->
-<section class="section position-relative">
-  <div class="container">
+<section class="section section-dots education-section position-relative">
+  <div class="container position-relative">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-title">{{ site.data.settings.education-title }}</h2>
       </div>
       {% for education in site.data.settings.education %}
       <div class="col-lg-6 col-md-6 mb-80">
-        <div class="d-flex">
-          <div class="mr-lg-5 mr-3">
+        <div class="d-flex align-items-start">
+          <div class="mr-lg-5 mr-3 flex-shrink-0">
+            {% if education.icon %}
+            <img class="org-logo education-logo shadow rounded-circle bg-white" src="{{ site.baseurl }}/assets/images/{{ education.icon }}" alt="{{ education.name }} logo">
+            {% else %}
             <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+            {% endif %}
           </div>
           <div>
             <p class="text-dark mb-1">{{ education.date }}</p>
@@ -22,8 +26,6 @@
       {% endfor %}
     </div>
   </div>
-  <!-- bg image -->
-  <img class="img-fluid edu-bg-image w-100" src="{{ site.baseurl }}/assets/images/backgrounds/education-bg.png" alt="bg-image">
 </section>
 <!-- /education -->
 {% endif %}

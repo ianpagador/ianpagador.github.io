@@ -58,37 +58,37 @@ experience-title: Experience
 experience:
   - {
       name: In-house Memory Developer,
-      icon: "icon-1.png",
+      icon: "logos/sunday-robotics.png",
       date: "Apr 2026 - Present",
       organization: "Sunday Robotics",
     }
   - {
       name: IT Contractor,
-      icon: "pdr-icon (1).jpg",
+      icon: "experience/pdr-icon (1).jpg",
       date: "Jun 2025 - Apr 2026",
       organization: "San Francisco Public Defender",
     }
   - {
       name: Capstone Project Intern,
-      icon: "icon-2.png",
+      icon: "logos/bart.png",
       date: "Feb 2025 - May 2025",
       organization: "Bay Area Rapid Transit (BART)",
     }
   - {
       name: Data Event Management Intern,
-      icon: "icon-3.png",
+      icon: "logos/uc-merced.png",
       date: "Aug 2024 - May 2025",
       organization: "UC Merced Office of Student Involvement",
     }
   - {
       name: IT Intern,
-      icon: "pdr-icon (1).jpg",
+      icon: "experience/pdr-icon (1).jpg",
       date: "May 2024 - Aug 2024",
       organization: "San Francisco Public Defender",
     }
   - {
       name: Student Consultant,
-      icon: "open-avenues (1).png",
+      icon: "experience/open-avenues (1).png",
       date: "Sep 2023 - Dec 2023",
       organization: "Open Avenues Career Pathways",
     }
@@ -100,11 +100,13 @@ education-title: Education
 education:
   - {
       name: "University of California, Merced",
+      icon: "logos/uc-merced.png",
       date: "Aug 2021 - Aug 2025",
       organization: "B.S. in Computer Science and Engineering, <br> Minor in Cognitive Science <br> GPA 3.42 · Dean's Honor List"
     }
   - {
       name: Granada High School,
+      icon: "logos/granada-high.png",
       date: "2017 - 2021",
       organization: "Golden State Seal Merit Diploma"
     }
@@ -114,14 +116,31 @@ education:
 
 skills-title: Technical Skills
 skills:
-  - { name: Python, color: "#ED6A5A", value: 90 }
-  - { name: SQL, color: "#F4D35E", value: 85 }
-  - { name: PowerShell, color: "#1DB9C3", value: 80 }
-  - { name: React / TypeScript, color: "#ED6A5A", value: 75 }
-  - { name: TensorFlow / OpenCV, color: "#F4D35E", value: 75 }
-  - { name: Power Automate / Azure, color: "#1DB9C3", value: 80 }
-  - { name: Flask, color: "#ED6A5A", value: 70 }
-  - { name: R Studio, color: "#F4D35E", value: 70 }
+  - { name: Python, value: 90 }
+  - { name: SQL, value: 85 }
+  - { name: pandas, value: 85 }
+  - { name: PowerShell, value: 80 }
+  - { name: Power Automate, value: 80 }
+  - { name: Azure, value: 80 }
+  - { name: React, value: 75 }
+  - { name: TypeScript, value: 75 }
+  - { name: TensorFlow, value: 75 }
+  - { name: OpenCV, value: 75 }
+  - { name: Git, value: 75 }
+  - { name: GitHub, value: 75 }
+  - { name: Excel, value: 75 }
+  - { name: Flask, value: 70 }
+  - { name: R, value: 70 }
+  - { name: Selenium, value: 70 }
+  - { name: SharePoint, value: 70 }
+  - { name: Django, value: 70 }
+  - { name: JavaScript, value: 68 }
+  - { name: Bash, value: 65 }
+  - { name: REST API, value: 65 }
+  - { name: BeautifulSoup, value: 65 }
+  - { name: SFTP, value: 60 }
+  - { name: Active Directory, value: 60 }
+  - { name: Windows OS, value: 60 }
 
 #-------------------------------
 # Portfolio Page

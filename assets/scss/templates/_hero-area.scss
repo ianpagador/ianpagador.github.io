@@ -120,3 +120,37 @@
     object-position: center bottom;
   }
 }
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  animation: hero-scroll-bounce 2s ease-in-out infinite;
+}
+
+.hero-scroll-chevron {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-right: 3px solid $white;
+  border-bottom: 3px solid $white;
+  transform: rotate(45deg);
+  margin-top: -6px;
+}
+
+@keyframes hero-scroll-bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
+}

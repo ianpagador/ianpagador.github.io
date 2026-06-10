@@ -155,4 +155,54 @@
       }
     });
   }
+
+  // Technical skills word cloud
+  var skillsDataElement = document.getElementById("skills-word-cloud-data");
+  var skillsCanvas = document.getElementById("skills-word-cloud");
+
+  if (skillsDataElement && skillsCanvas && window.WordCloud) {
+    var skills = JSON.parse(skillsDataElement.textContent);
+    var values = skills.map(function (skill) {
+      return skill.value;
+    });
+    var maxWeight = Math.max.apply(null, values);
+    var minWeight = Math.min.apply(null, values);
+
+    var renderSkillsWordCloud = function () {
+      var wrapper = skillsCanvas.parentElement;
+      var width = wrapper.offsetWidth;
+      var height = Math.max(360, Math.min(480, width * 0.55));
+
+      skillsCanvas.width = width;
+      skillsCanvas.height = height;
+
+      window.WordCloud(skillsCanvas, {
+        list: skills.map(function (skill) {
+          return [skill.name, skill.value];
+        }),
+        gridSize: Math.round(10 * width / 1024),
+        weightFactor: function (size) {
+          var range = maxWeight - minWeight || 1;
+          var normalized = (size - minWeight) / range;
+          return normalized * (width * 0.09) + width * 0.028;
+        },
+        fontFamily: "Helvetica, Arial, sans-serif",
+        color: "#1a1a1a",
+        rotateRatio: 0.35,
+        rotationSteps: 2,
+        backgroundColor: "transparent",
+        minSize: 10,
+        drawOutOfBound: false,
+        shrinkToFit: true,
+      });
+    };
+
+    renderSkillsWordCloud();
+
+    var resizeTimer;
+    window.addEventListener("resize", function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(renderSkillsWordCloud, 200);
+    });
+  }
 })(jQuery);

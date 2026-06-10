@@ -120,15 +120,9 @@ skills:
   - { name: SQL, value: 85 }
   - { name: pandas, value: 85 }
   - { name: PowerShell, value: 80 }
-  - { name: Power Automate, value: 80 }
-  - { name: Azure, value: 80 }
-  - { name: React, value: 75 }
-  - { name: TypeScript, value: 75 }
-  - { name: TensorFlow, value: 75 }
-  - { name: OpenCV, value: 75 }
-  - { name: Git, value: 75 }
-  - { name: GitHub, value: 75 }
-  - { name: Excel, value: 75 }
+  - { name: React / TypeScript, value: 75 }
+  - { name: TensorFlow / OpenCV, value: 75 }
+  - { name: Power Automate / Azure, value: 80 }
   - { name: Flask, value: 70 }
   - { name: R, value: 70 }
   - { name: Selenium, value: 70 }

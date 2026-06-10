@@ -1,16 +1,16 @@
 <!-- hero area -->
-<section class="hero-area bg-primary" id="parallax">
+<section class="hero-area bg-primary">
   <div class="container">
     <div class="hero-content text-center position-relative zindex-1">
       <h1 class="text-white font-tertiary hero-title">{{ site.data.settings.hero.hero-title }}</h1>
       <ul class="list-unstyled hero-social">
         {% for social in site.data.settings.social %}
           {% if social.name == "LinkedIn" %}
-          <li class="text-white font-secondary">
-            <a class="text-white" href="{{ social.link }}" target="_blank" rel="noopener noreferrer">
+          <li class="text-white font-secondary d-inline-flex align-items-center justify-content-center">
+            <a class="text-white d-inline-flex align-items-center" href="{{ social.link }}" target="_blank" rel="noopener noreferrer">
               <i class="{{ social.icon }}"></i>
             </a>
-            {{ social.name }}
+            <span>{{ social.name }}</span>
           </li>
           {% endif %}
         {% endfor %}

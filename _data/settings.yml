@@ -36,7 +36,7 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Welcome to <br> my website!
+  hero-title: Welcome to my website!
 
 social:
   - { name: "Instagram", icon: "ti-instagram", link: "https://www.instagram.com/ianmirandap/" }

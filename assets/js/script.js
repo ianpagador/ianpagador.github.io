@@ -31,63 +31,6 @@
     });
   });
 
-  /* ########################################### hero parallax ############################################## */
-  window.onload = function () {
-    var parallaxBox = document.getElementById("parallax");
-    if (!parallaxBox) {
-      return;
-    }
-
-    var layers = [
-      { id: "l3", speed: 20 },
-      { id: "l5", speed: 30 },
-      { id: "l6", speed: 45 },
-      { id: "l8", speed: 25 },
-      { id: "l9", speed: 40 },
-    ];
-    var layerPositions = [];
-
-    layers.forEach(function (layer) {
-      var element = document.getElementById(layer.id);
-      if (element) {
-        layerPositions.push({
-          id: layer.id,
-          left: element.offsetLeft,
-          top: element.offsetTop,
-          speed: layer.speed,
-        });
-      }
-    });
-
-    parallaxBox.onmousemove = function (event) {
-      event = event || window.event;
-      var x = event.clientX - parallaxBox.offsetLeft,
-        y = event.clientY - parallaxBox.offsetTop;
-
-      layerPositions.forEach(function (layer) {
-        mouseParallax(layer.id, layer.left, layer.top, x, y, layer.speed);
-      });
-    };
-  };
-
-  function mouseParallax(id, left, top, mouseX, mouseY, speed) {
-    var obj = document.getElementById(id);
-    var parentObj = obj.parentNode,
-      containerWidth = parseInt(parentObj.offsetWidth),
-      containerHeight = parseInt(parentObj.offsetHeight);
-    obj.style.left =
-      left -
-      ((mouseX - (parseInt(obj.offsetWidth) / 2 + left)) / containerWidth) *
-        speed +
-      "px";
-    obj.style.top =
-      top -
-      ((mouseY - (parseInt(obj.offsetHeight) / 2 + top)) / containerHeight) *
-        speed +
-      "px";
-  }
-  /* ########################################### /hero parallax ############################################## */
-
   // testimonial-slider
   $(".testimonial-slider").slick({
     dots: true,
@@ -171,7 +114,7 @@
     var renderSkillsWordCloud = function () {
       var wrapper = skillsCanvas.parentElement;
       var width = wrapper.offsetWidth;
-      var height = Math.max(360, Math.min(480, width * 0.55));
+      var height = Math.max(460, Math.min(540, width * 0.62));
 
       skillsCanvas.width = width;
       skillsCanvas.height = height;
@@ -180,11 +123,11 @@
         list: skills.map(function (skill) {
           return [skill.name, skill.value];
         }),
-        gridSize: Math.round(10 * width / 1024),
+        gridSize: Math.round(9 * width / 1024),
         weightFactor: function (size) {
           var range = maxWeight - minWeight || 1;
           var normalized = (size - minWeight) / range;
-          return normalized * (width * 0.09) + width * 0.028;
+          return normalized * (width * 0.08) + width * 0.026;
         },
         fontFamily: "Helvetica, Arial, sans-serif",
         color: "#1a1a1a",
@@ -194,6 +137,7 @@
         minSize: 10,
         drawOutOfBound: false,
         shrinkToFit: true,
+        origin: [width / 2, height / 2 - 10],
       });
     };
 

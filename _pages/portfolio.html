@@ -21,11 +21,6 @@ title: My Portfolio
             <p class="text-primary font-secondary mb-2">{{ item.subtitle }}</p>
             <h3 class="mb-3">{{ item.title }}</h3>
             <p class="paragraph-lg text-dark mb-4">{{ item.description }}</p>
-            <ul class="portfolio-card-highlights mb-4">
-              {% for highlight in item.highlights %}
-              <li>{{ highlight }}</li>
-              {% endfor %}
-            </ul>
             <a class="btn btn-primary" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">view project</a>
           </div>
         </article>

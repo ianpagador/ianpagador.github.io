@@ -46,7 +46,7 @@ social:
 # About (Section and Page)
 
 # About Section
-blurb: I'm a 4th year undergraduate student majoring in CSE and minoring in Cognitive Science at the University of California, Merced, aiming to pursue a career in Data Analytics. Here you can find the projects I completed across my educational and professional experiences.
+blurb: I'm a recent UC Merced graduate with a B.S. in Computer Science and Engineering and a minor in Cognitive Science, pursuing a career in Data Analytics. Here you can find projects I've completed across my educational and professional experiences.
 
 blurb-btn-link: "/about"
 blurb-btn-name: learn more
@@ -57,16 +57,40 @@ blurb-btn-name: learn more
 experience-title: Experience
 experience:
   - {
-      name: Student Consultant,
-      icon: "open-avenues (1).png",
-      date: "Sep 2023 - Dec 2023",
-      organization: "Open Avenues Foundation",
+      name: In-house Memory Developer,
+      icon: "icon-1.png",
+      date: "Apr 2026 - Present",
+      organization: "Sunday Robotics",
+    }
+  - {
+      name: IT Contractor,
+      icon: "pdr-icon (1).jpg",
+      date: "Jun 2025 - Apr 2026",
+      organization: "San Francisco Public Defender",
+    }
+  - {
+      name: Capstone Project Intern,
+      icon: "icon-2.png",
+      date: "Feb 2025 - May 2025",
+      organization: "Bay Area Rapid Transit (BART)",
+    }
+  - {
+      name: Data Event Management Intern,
+      icon: "icon-3.png",
+      date: "Aug 2024 - May 2025",
+      organization: "UC Merced Office of Student Involvement",
     }
   - {
       name: IT Intern,
       icon: "pdr-icon (1).jpg",
-      date: "May 2024 - Present",
+      date: "May 2024 - Aug 2024",
       organization: "San Francisco Public Defender",
+    }
+  - {
+      name: Student Consultant,
+      icon: "open-avenues (1).png",
+      date: "Sep 2023 - Dec 2023",
+      organization: "Open Avenues Career Pathways",
     }
 
 #-------------------------------
@@ -76,8 +100,8 @@ education-title: Education
 education:
   - {
       name: "University of California, Merced",
-      date: "2021 - 2025 (expected)",
-      organization: "B.S. in Computer Science <br> and Engineering"
+      date: "Aug 2021 - Aug 2025",
+      organization: "B.S. in Computer Science and Engineering, <br> Minor in Cognitive Science <br> GPA 3.42 · Dean's Honor List"
     }
   - {
       name: Granada High School,
@@ -86,78 +110,42 @@ education:
     }
 
 #-------------------------------
+# Skills Section
+
+skills-title: Technical Skills
+skills:
+  - { name: Python, color: "#ED6A5A", value: 90 }
+  - { name: SQL, color: "#F4D35E", value: 85 }
+  - { name: PowerShell, color: "#1DB9C3", value: 80 }
+  - { name: React / TypeScript, color: "#ED6A5A", value: 75 }
+  - { name: TensorFlow / OpenCV, color: "#F4D35E", value: 75 }
+  - { name: Power Automate / Azure, color: "#1DB9C3", value: 80 }
+  - { name: Flask, color: "#ED6A5A", value: 70 }
+  - { name: R Studio, color: "#F4D35E", value: 70 }
+
+#-------------------------------
 # Portfolio Page
 
-portfolio-label:
-  - { title: "DESIGN", type: "design" }
-  - { title: "SCRIPTING", type: "scripting" }
-  - { title: "MEDIA", type: "media" }
-
 portfolio-items:
-  - image: "assets/images/portfolio/pdr parade.png"
-    url: "https://github.com/ianpagador/PDRscripts"
-    text: "Public Defender <br> Scripts Collection"
-    description: "A GitHub repo containing my completed scripts as a PDR intern."
-    portfolio-type:
-      - type: "scripting"
-
-  - image: "assets/images/portfolio/Soul motion.png"
-    url: "https://www.canva.com/design/DAFoZufMPsI/TwWaJ-aU0mcIS8F1XItMZA/edit?utm_content=DAFoZufMPsI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-    text: "Movers in Soul Motion <br> Promotional Poster"
-    description: "A Canva poster I created for the Movers in Soul Motion Club in July 2023."
-    portfolio-type:
-      - type: "design"
-
   - image: "assets/images/portfolio/oa project.png"
     url: "https://acrobat.adobe.com/id/urn:aaid:sc:US:85c2c9e2-0a9d-4771-a842-b66d7d0feac9"
-    text: "Predicting Adverse Events Risk with Logistic Regression and Stepwise Selection"
-    description: "A project I completed during my internship at Open Avenues Healthcare Data Analytics Institute."
-    portfolio-type:
-      - type: "scripting"
-
-  - image: "assets/images/portfolio/M4K MIC DROP PROMOTION.png"
-    url: "https://www.canva.com/design/DAF8DKbuk2w/ouufOGxjF8GD4aqhC2Knqg/edit?utm_content=DAF8DKbuk2w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-    text: "M4K Mic Drop Unit <br> Promotional Poster"
-    description: "A Canva poster I contributed in designing for M4K at UC Merced."
-    portfolio-type:
-      - type: "design"
-
-  - image: "assets/images/portfolio/practice attendance.png"
-    url: "https://docs.google.com/spreadsheets/d/1KbTC5eV9S_06aDJmsZksG1b2ja5PmkneH8nAWhYiSeQ/edit?usp=sharing"
-    text: "KAIROS Dance Practice <br> Attendance Spreadsheet"
-    description: "A dynamic spreadsheet I made as a KAIROS section lead to automatically highlight cells for dance practice attendance."
-    portfolio-type:
-      - type: "scripting"
-
-  - image: "assets/images/portfolio/CASE 143.png"
-    url: "https://www.canva.com/design/DAFYmtUWb78/SNapKcrprxhlXwFW-pE7Og/edit?utm_content=DAFYmtUWb78&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-    text: "KAIROS CASE 143 Unit <br> Promotional Poster"
-    description: "A Canva poster I constructed to advertise my KAIROS unit's first dance workshop."
-    portfolio-type:
-      - type: "design"
-
-  - image: "assets/images/portfolio/thumbnail_143.jpg"
-    url: "https://youtu.be/_81l0J5-lnc?si=ZYQkOLMd7BangyuG"
-    text: "KAIROS CASE 143 Dance Cover"
-    description: "A dance cover video I designed and edited entirely as a KAIROS section lead."
-    portfolio-type:
-      - type: "media"
-      - type: "design"
+    title: "Predicting Adverse Events Risk with Logistic Regression and Stepwise Selection"
+    subtitle: "Open Avenues · Student Consultant · September 2023 – December 2023"
+    description: "As a student consultant for the Healthcare Data Analytics Institute through Open Avenues Career Pathways, I predicted adverse events risk using a machine learning approach."
+    highlights:
+      - "Programmed a logistic regression model in R Studio for the Healthcare Data Analytics Institute using the ggplot, leaps, MASS, and pROC libraries."
+      - "Implemented feature selection to find which variables most affect a patient's likelihood to experience a stroke."
+      - "Split entries 80:20 for training and testing."
 
   - image: "assets/images/portfolio/Copy of Bridgie.png"
     url: "https://github.com/EzraApple/ccbridge"
-    text: "CCBridge - An AI-powered <br> Customer Service System"
-    description: "My team's submission for UC Berkeley's AI Hackathon. My contributions were implementing speech recognition and designing branding elements."
-    portfolio-type:
-      - type: "scripting"
-      - type: "design"
-
-  - image: "assets/images/portfolio/ig vlog thumbnail.jpg"
-    url: "https://www.instagram.com/reel/CwED3tZJxMF"
-    text: "Instagram Vlog <br> @Salt & Olive in Utah"
-    description: "One example of the vlogs I post on Instagram showcasing food and travel activities."
-    portfolio-type:
-      - type: "media"
+    title: "CCBridge — AI-Powered Customer Service System"
+    subtitle: "2023 UC Berkeley AI Hackathon · Python Developer · June 2023"
+    description: "CCBridge is a service call system that uses OpenAI and Azure Cognitive Services for dynamic customer-to-company interaction."
+    highlights:
+      - "Created a service call system for the 2023 UC Berkeley AI Hackathon using OpenAI and Azure Cognitive Sciences."
+      - "Used Azure Speech SDK in Python to train a custom speech model to recognize names from a local database."
+      - "Transcribed customer dialogue into formatted text and linearly searched the database referencing user dialogue transcription."
 
 
 #-------------------------------

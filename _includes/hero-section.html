@@ -1,40 +1,38 @@
 <!-- hero area -->
 <section class="hero-area bg-primary" id="parallax">
   <div class="container">
-    <div class="row align-items-center hero-content-row">
-      <div class="col-lg-5">
-        <ul class="list-unstyled hero-social position-relative zindex-1">
-          {% for social in site.data.settings.social %}
-          <li class="mb-4 text-white font-secondary">
+    <div class="hero-content text-center position-relative zindex-1">
+      <h1 class="text-white font-tertiary hero-title">{{ site.data.settings.hero.hero-title }}</h1>
+      <ul class="list-unstyled hero-social">
+        {% for social in site.data.settings.social %}
+          {% if social.name == "LinkedIn" %}
+          <li class="text-white font-secondary">
             <a class="text-white" href="{{ social.link }}" target="_blank" rel="noopener noreferrer">
               <i class="{{ social.icon }}"></i>
             </a>
             {{ social.name }}
           </li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="col-lg-7">
-        <h1 class="text-white font-tertiary hero-title">{{ site.data.settings.hero.hero-title }}</h1>
-      </div>
+          {% endif %}
+        {% endfor %}
+      </ul>
     </div>
   </div>
   <div class="layer-bg w-100">
     <img class="img-fluid w-100" src="{{ site.baseurl }}/assets/images/illustrations/leaf-bg.png" alt="bg-shape">
   </div>
-  <div class="layer" id="l3">
+  <div class="layer hero-layer" id="l3">
     <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-orange.png" alt="bg-shape">
   </div>
-  <div class="layer" id="l5">
+  <div class="layer hero-layer" id="l5">
     <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-yellow.png" alt="bg-shape">
   </div>
-  <div class="layer" id="l6">
+  <div class="layer hero-layer" id="l6">
     <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-cyan.png" alt="bg-shape">
   </div>
-  <div class="layer" id="l8">
+  <div class="layer hero-layer" id="l8">
     <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-pink-round.png" alt="bg-shape">
   </div>
-  <div class="layer" id="l9">
+  <div class="layer hero-layer" id="l9">
     <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-cyan-2.png" alt="bg-shape">
   </div>
 </section>

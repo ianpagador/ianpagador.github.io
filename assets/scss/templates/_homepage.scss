@@ -1,22 +1,23 @@
 /* skills */
 .skills-word-cloud-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .skills-word-cloud-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 420px;
-  padding: 20px 0;
+  min-height: 480px;
+  padding: 10px 0 40px;
+  overflow: visible;
 }
 
 #skills-word-cloud {
   display: block;
   width: 100%;
   max-width: 920px;
-  height: 420px;
+  height: 480px;
 }
 
 /* /skills */
@@ -176,7 +177,7 @@
 
 /* footer */
 .footer-section {
-  padding-top: 200px;
+  padding-top: 160px;
 }
 
 .footer-contact-inline {
@@ -188,7 +189,9 @@
 }
 
 .section-on-footer {
-  margin-bottom: -250px;
+  margin-bottom: -220px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .footer-copyright {

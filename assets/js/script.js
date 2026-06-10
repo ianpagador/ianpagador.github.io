@@ -104,9 +104,9 @@
 
   heroLayers.forEach(function (layer) {
     var driftToRandomPosition = function () {
-      var x = Math.floor(Math.random() * 120 - 60);
-      var y = Math.floor(Math.random() * 90 - 45);
-      var rotate = Math.floor(Math.random() * 8 - 4);
+      var x = Math.floor(Math.random() * 280 - 140);
+      var y = Math.floor(Math.random() * 220 - 110);
+      var rotate = Math.floor(Math.random() * 18 - 9);
       var duration = 14 + Math.random() * 10;
 
       layer.style.transition = "transform " + duration + "s ease-in-out";
@@ -129,16 +129,30 @@
     var maxWeight = Math.max.apply(null, values);
     var minWeight = Math.min.apply(null, values);
 
-    var renderSkillsWordCloud = function () {
+    var shuffleSkills = function (list) {
+      var shuffled = list.slice();
+
+      for (var i = shuffled.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = shuffled[i];
+        shuffled[i] = shuffled[j];
+        shuffled[j] = temp;
+      }
+
+      return shuffled;
+    };
+
+    var renderSkillsWordCloud = function (shouldShuffle) {
       var wrapper = skillsCanvas.parentElement;
       var width = wrapper.offsetWidth;
       var height = Math.max(380, Math.min(440, width * 0.48));
+      var activeSkills = shouldShuffle ? shuffleSkills(skills) : skills;
 
       skillsCanvas.width = width;
       skillsCanvas.height = height;
 
       window.WordCloud(skillsCanvas, {
-        list: skills.map(function (skill) {
+        list: activeSkills.map(function (skill) {
           return [skill.name, skill.value];
         }),
         gridSize: Math.round(9 * width / 1024),
@@ -159,6 +173,13 @@
     };
 
     renderSkillsWordCloud();
+
+    var refreshButton = document.getElementById("skills-word-cloud-refresh");
+    if (refreshButton) {
+      refreshButton.addEventListener("click", function () {
+        renderSkillsWordCloud(true);
+      });
+    }
 
     var resizeTimer;
     window.addEventListener("resize", function () {

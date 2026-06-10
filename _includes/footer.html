@@ -2,26 +2,26 @@
 <footer class="bg-dark footer-section">
   <div class="section">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">School Email</h5>
-          <div class="spacer"></div>
-          <a href="mailto:{{ site.data.settings.school }}" class="text-white paragraph-lg font-secondary">{{ site.data.settings.school }}</a>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Personal Email</h5>
-          <div class="spacer"></div>
-          <a href="mailto:{{ site.data.settings.email }}" class="text-white paragraph-lg font-secondary">{{ site.data.settings.email }}</a>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.phone }}</p>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="footer-contact-inline d-flex flex-wrap justify-content-center align-items-start text-center">
+            <div class="footer-contact-item">
+              <h5 class="text-light">Personal Email</h5>
+              <div class="spacer"></div>
+              <a href="mailto:{{ site.data.settings.email }}" class="text-white paragraph-lg font-secondary">{{ site.data.settings.email }}</a>
+            </div>
+            <div class="footer-contact-item">
+              <h5 class="text-light">Phone</h5>
+              <div class="spacer"></div>
+              <p class="text-white paragraph-lg font-secondary mb-0">{{ site.data.settings.phone }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">{{site.data.settings.copyright | markdownify}}</p>
+  <div class="footer-copyright border-top text-center border-dark">
+    <p class="mb-0">{{ site.data.settings.copyright | markdownify }}</p>
   </div>
 </footer>
 <!-- /footer -->

@@ -140,17 +140,19 @@
 
   // Shuffle js filter and masonry
   var Shuffle = window.Shuffle;
-  var jQuery = window.jQuery;
+  var shuffleWrapper = document.querySelector(".shuffle-wrapper");
 
-  var myShuffle = new Shuffle(document.querySelector(".shuffle-wrapper"), {
-    itemSelector: ".shuffle-item",
-    buffer: 1,
-  });
+  if (shuffleWrapper && Shuffle) {
+    var myShuffle = new Shuffle(shuffleWrapper, {
+      itemSelector: ".shuffle-item",
+      buffer: 1,
+    });
 
-  jQuery('input[name="shuffle-filter"]').on("change", function (evt) {
-    var input = evt.currentTarget;
-    if (input.checked) {
-      myShuffle.filter(input.value);
-    }
-  });
+    jQuery('input[name="shuffle-filter"]').on("change", function (evt) {
+      var input = evt.currentTarget;
+      if (input.checked) {
+        myShuffle.filter(input.value);
+      }
+    });
+  }
 })(jQuery);

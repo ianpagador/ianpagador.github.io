@@ -5,45 +5,30 @@ title: My Portfolio
 <!-- portfolio -->
 <section class="section">
   <div class="container">
-    <div class="row mb-5">
-      <div class="col-12">
-        <div class="btn-group btn-group-toggle justify-content-center d-flex" data-toggle="buttons">
-          <label class="btn btn-sm btn-primary active">
-            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
-          </label>
-          {% for label in site.data.settings.portfolio-label %}
-          <label class="btn btn-sm btn-primary">
-            <input type="radio" name="shuffle-filter" value="{{ label.type }}" />{{ label.title }}
-          </label>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-    <div class="row shuffle-wrapper">
+    <div class="row portfolio-featured">
       {% for item in site.data.settings.portfolio-items %}
-      <div class="col-lg-4 col-6 mb-4 shuffle-item"
-        data-groups="[{% for portfolio in item.portfolio-type %}{% if forloop.first == true %}{% else %},{% endif %}&quot;{{ portfolio.type }}&quot;{% endfor %}]">
-        <div class="position-relative rounded hover-wrapper">
-          <span></span>
-          <img src="{{ site.baseurl }}/{{ item.image }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-          <div class="hover-overlay">
-            <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="{{ item.url }}">view project</a>
+      <div class="col-lg-6 mb-5">
+        <article class="portfolio-card shadow rounded-lg overflow-hidden h-100">
+          <div class="portfolio-card-image hover-wrapper">
+            <img src="{{ site.baseurl }}/{{ item.image }}" alt="{{ item.title }}" class="img-fluid w-100 d-block">
+            <div class="hover-overlay">
+              <div class="hover-content">
+                <a class="btn btn-light" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">view project</a>
+              </div>
             </div>
           </div>
-          <br><br>
-          <span></span>
-          <h4 style="text-align:center">{{ item.text }}</h4>
-          <p style="text-align:center;margin-bottom:7px">{{ item.description }}</p>
-          <div style="text-align:center">
-            <ul class="comma-list">
-              <span class="font-secondary">Tags: </span>
-              {% for tag in item.portfolio-type %}
-              <li style="text-align:center">{{ tag.type }}</li>
+          <div class="portfolio-card-body p-4 p-lg-5">
+            <p class="text-primary font-secondary mb-2">{{ item.subtitle }}</p>
+            <h3 class="mb-3">{{ item.title }}</h3>
+            <p class="paragraph-lg text-dark mb-4">{{ item.description }}</p>
+            <ul class="portfolio-card-highlights mb-4">
+              {% for highlight in item.highlights %}
+              <li>{{ highlight }}</li>
               {% endfor %}
             </ul>
-        </div>
-        </div>
+            <a class="btn btn-primary" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">view project</a>
+          </div>
+        </article>
       </div>
       {% endfor %}
     </div>

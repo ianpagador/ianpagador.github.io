@@ -14,7 +14,6 @@ copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.c
 
 menu:
   - { name: About, link: "/about" }
-  - { name: Portfolio, link: "/portfolio" }
   - { name: Contact, link: "/contact" }
 
 #-------------------------------
@@ -139,26 +138,26 @@ skills:
 #-------------------------------
 # Portfolio Page
 
-portfolio-items:
-  - image: "assets/images/portfolio/oa project.png"
-    url: "https://acrobat.adobe.com/id/urn:aaid:sc:US:85c2c9e2-0a9d-4771-a842-b66d7d0feac9"
-    title: "Predicting Adverse Events Risk with Logistic Regression and Stepwise Selection"
-    subtitle: "Open Avenues · Student Consultant · September 2023 – December 2023"
-    description: "As a student consultant for the Healthcare Data Analytics Institute through Open Avenues Career Pathways, I predicted adverse events risk using a machine learning approach."
-    highlights:
-      - "Programmed a logistic regression model in R Studio for the Healthcare Data Analytics Institute using the ggplot, leaps, MASS, and pROC libraries."
-      - "Implemented feature selection to find which variables most affect a patient's likelihood to experience a stroke."
-      - "Split entries 80:20 for training and testing."
+# portfolio-items:
+#   - image: "assets/images/portfolio/oa project.png"
+#     url: "https://acrobat.adobe.com/id/urn:aaid:sc:US:85c2c9e2-0a9d-4771-a842-b66d7d0feac9"
+#     title: "Predicting Adverse Events Risk with Logistic Regression and Stepwise Selection"
+#     subtitle: "Open Avenues · Student Consultant · September 2023 – December 2023"
+#     description: "As a student consultant for the Healthcare Data Analytics Institute through Open Avenues Career Pathways, I predicted adverse events risk using a machine learning approach."
+#     highlights:
+#       - "Programmed a logistic regression model in R Studio for the Healthcare Data Analytics Institute using the ggplot, leaps, MASS, and pROC libraries."
+#       - "Implemented feature selection to find which variables most affect a patient's likelihood to experience a stroke."
+#       - "Split entries 80:20 for training and testing."
 
-  - image: "assets/images/portfolio/Copy of Bridgie.png"
-    url: "https://github.com/EzraApple/ccbridge"
-    title: "CCBridge — AI-Powered Customer Service System"
-    subtitle: "2023 UC Berkeley AI Hackathon · Python Developer · June 2023"
-    description: "CCBridge is a service call system that uses OpenAI and Azure Cognitive Services for dynamic customer-to-company interaction."
-    highlights:
-      - "Created a service call system for the 2023 UC Berkeley AI Hackathon using OpenAI and Azure Cognitive Sciences."
-      - "Used Azure Speech SDK in Python to train a custom speech model to recognize names from a local database."
-      - "Transcribed customer dialogue into formatted text and linearly searched the database referencing user dialogue transcription."
+#   - image: "assets/images/portfolio/Copy of Bridgie.png"
+#     url: "https://github.com/EzraApple/ccbridge"
+#     title: "CCBridge — AI-Powered Customer Service System"
+#     subtitle: "2023 UC Berkeley AI Hackathon · Python Developer · June 2023"
+#     description: "CCBridge is a service call system that uses OpenAI and Azure Cognitive Services for dynamic customer-to-company interaction."
+#     highlights:
+#       - "Created a service call system for the 2023 UC Berkeley AI Hackathon using OpenAI and Azure Cognitive Sciences."
+#       - "Used Azure Speech SDK in Python to train a custom speech model to recognize names from a local database."
+#       - "Transcribed customer dialogue into formatted text and linearly searched the database referencing user dialogue transcription."
 
 
 #-------------------------------

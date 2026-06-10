@@ -43,14 +43,6 @@
   margin-bottom: 1rem;
 }
 
-/* dotted backgrounds */
-.section-dots {
-  background-image: url('../images/backgrounds/bg-dots.png');
-  background-repeat: repeat;
-  background-position: top left;
-  background-color: $body-color;
-}
-
 /* service */
 .hover-bg-primary {
   transition: .3s ease;
@@ -184,16 +176,35 @@
 
 /* footer */
 .footer-section {
-  padding-top: 120px;
+  padding-top: 200px;
+}
+
+.footer-contact-inline {
+  gap: 4rem;
+}
+
+.footer-contact-item {
+  min-width: 220px;
 }
 
 .section-on-footer {
-  margin-bottom: -300px;
-  padding-bottom: 30px;
+  margin-bottom: -250px;
 }
 
-.contact-section {
-  padding-top: 60px;
+.footer-copyright {
+  padding: 0.75rem 0;
+  border-top-color: rgba($white, 0.15) !important;
+
+  p,
+  a {
+    color: $text-color-light !important;
+  }
+
+  a:hover,
+  a:focus {
+    color: $text-color-light !important;
+    opacity: 0.75;
+  }
 }
 
 .shadow-down {

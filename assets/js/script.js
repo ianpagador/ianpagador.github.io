@@ -161,7 +161,7 @@
           var normalized = (size - minWeight) / range;
           return normalized * (width * 0.08) + width * 0.026;
         },
-        fontFamily: "Helvetica, Arial, sans-serif",
+        fontFamily: "Poppins, sans-serif",
         color: "#1a1a1a",
         rotateRatio: 0.35,
         rotationSteps: 2,

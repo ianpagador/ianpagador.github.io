@@ -117,6 +117,20 @@
     setInterval(driftToRandomPosition, 16000 + Math.random() * 8000);
   });
 
+  // Hero scroll indicator: offset scroll target for fixed header
+  $(".hero-scroll-indicator").on("click", function (event) {
+    var targetId = $(this).attr("href");
+    if (targetId && targetId.charAt(0) === "#") {
+      var $target = $(targetId);
+      if ($target.length) {
+        event.preventDefault();
+        var headerHeight = $(".navigation.fixed-top").outerHeight() || 0;
+        var targetPosition = $target.offset().top - headerHeight;
+        $("html, body").animate({ scrollTop: targetPosition }, 600);
+      }
+    }
+  });
+
   // Technical skills word cloud
   var skillsDataElement = document.getElementById("skills-word-cloud-data");
   var skillsCanvas = document.getElementById("skills-word-cloud");

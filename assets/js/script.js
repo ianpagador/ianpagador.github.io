@@ -125,7 +125,8 @@
       if ($target.length) {
         event.preventDefault();
         var headerHeight = $(".navigation.fixed-top").outerHeight() || 0;
-        var targetPosition = $target.offset().top - headerHeight;
+        var extraOffset = 12;
+        var targetPosition = $target.offset().top - headerHeight - extraOffset;
         $("html, body").animate({ scrollTop: targetPosition }, 600);
       }
     }

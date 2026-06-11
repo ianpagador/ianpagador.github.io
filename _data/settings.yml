@@ -63,7 +63,7 @@ experience:
     }
   - {
       name: IT Contractor,
-      icon: "experience/pdr-icon (1).jpg",
+      icon: "logos/sf-pdr.png",
       date: "Jun 2025 - Apr 2026",
       organization: "San Francisco Public Defender",
     }
@@ -81,7 +81,7 @@ experience:
     }
   - {
       name: IT Intern,
-      icon: "experience/pdr-icon (1).jpg",
+      icon: "logos/sf-pdr.png",
       date: "May 2024 - Aug 2024",
       organization: "San Francisco Public Defender",
     }

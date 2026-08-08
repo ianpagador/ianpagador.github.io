@@ -38,8 +38,7 @@ hero:
   hero-title: Welcome to my website!
 
 social:
-  - { name: "Instagram", icon: "ti-instagram", link: "https://www.instagram.com/ianmirandap/" }
-  - { name: "LinkedIn", icon: "ti-linkedin", link: "https://www.linkedin.com/in/ian-venedict-pagador-965600227/" }
+  { name: "LinkedIn", icon: "ti-linkedin", link: "https://www.linkedin.com/in/ian-venedict-pagador-965600227/" }
 
 #-------------------------------
 # About (Section and Page)
@@ -56,15 +55,15 @@ blurb-btn-name: learn more
 experience-title: Experience
 experience:
   - {
-      name: Teleoperations Memory Developer,
+      name: Memory Developer Reviewer,
       icon: "logos/sunday-robotics.png",
-      date: "Apr 2026 - Present",
+      date: "Jul 2026 - Present",
       organization: "Sunday Robotics",
     }
   - {
       name: IT Contractor,
       icon: "logos/sf-pdr.png",
-      date: "Jun 2025 - Apr 2026",
+      date: "Jun 2025 - May 2026",
       organization: "San Francisco Public Defender",
     }
   - {
